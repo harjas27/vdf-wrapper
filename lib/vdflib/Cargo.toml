@@ -1,0 +1,10 @@
+[package]
+name = "vdflib"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = "0.2.2"
+vdf = "0.1.0"

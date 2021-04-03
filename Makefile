@@ -3,12 +3,12 @@ ROOT_DIR := $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 build:
 	cd lib/vdflib && cargo build --release
 	cp lib/vdflib/target/release/libvdflib.so lib/
-	go build -ldflags="-r $(ROOT_DIR)lib" main.go
+	go build -ldflags="-r $(ROOT_DIR)lib"
 
 buildmacos:
 	cd lib/vdflib && cargo build --release
 	cp lib/vdflib/target/release/libvdflib.dylib lib/
-	go build -ldflags="-r $(ROOT_DIR)lib" main.go
+	go build -ldflags="-r $(ROOT_DIR)lib"
 
 test:
 	go test -ldflags="-r $(ROOT_DIR)lib"

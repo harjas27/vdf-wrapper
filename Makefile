@@ -14,7 +14,7 @@ test:
 	go test -ldflags="-r $(ROOT_DIR)lib"
 
 bench:
-	go test -bench=. -benchmem -run=XXX -cpuprofile profile.out  -ldflags="-r $(ROOT_DIR)lib"
+	go test -bench=. -benchmem -run=XXX  -ldflags="-r $(ROOT_DIR)lib"
 
 prof:
 	go test -cpuprofile cpu_profile.out -memprofile mem_profile.out -ldflags="-r $(ROOT_DIR)lib"

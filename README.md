@@ -70,3 +70,4 @@ a VDF. The `Execute` function can be used to run the created VDF and `Verify` fu
 ### With the Harmony client
 This repository exposes the similar functions to create, execute and verify as done by the https://github.com/harmony-one/vdf repo. All the 
 public functions have been implemented with the same signature as that to the current go VDF repo. Thus, by changing the imported go module, this repo can be integrated with the client 
+An integration with the harmony client that builds successfully can be found here - https://github.com/harjas27/harmony/tree/use_rust_vdf
